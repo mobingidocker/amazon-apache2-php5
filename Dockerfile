@@ -10,7 +10,7 @@ RUN yum install -y gcc make
 RUN yum install -y httpd
 RUN /etc/init.d/httpd stop
 
-RUN yum install -y php-devel php-mysql php-pgsql php-pdo php-pear php-mbstring php
+RUN yum install -y php-devel php-mysql php-pgsql php-pdo php-pear php-mbstring gd gd-devel php-gd php
 
 COPY supervisord.conf /etc/supervisord.conf
 COPY config /config
