@@ -12,7 +12,7 @@ RUN /etc/init.d/httpd stop
 
 RUN yum install -y php-devel php-mysql php-pgsql php-pdo php-pear php-mbstring php
 
-COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+COPY supervisord.conf /etc/supervisord.conf
 COPY config /config
 COPY httpd.conf /etc/httpd/conf/httpd.conf
 COPY sudoers /etc/sudoers
